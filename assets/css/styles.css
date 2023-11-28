@@ -1,0 +1,1243 @@
+/* Spartan font */
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* Reset default values */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Spartan", sans-serif;
+}
+/* h1 props. */
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+/* h2 props. */
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+/* h4 props. */
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+/* h6 props. */
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+/* p props. */
+p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+/* section p1 props. */
+.section-p1 {
+    padding: 40px 80px;
+}
+/* section m1 props. */
+.section-m1 {
+    margin: 40px 0;
+}
+/* White button props. */
+button.white_button {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+/* Transparent button props. */
+button.transparent_button {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid #fff;
+    outline: none;
+    transition: 0.2s;
+}
+/* body props. */
+body {
+    width: 100%;
+}
+/* Navigation section props. */
+#navbar__section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+/* Navbar ul props. */
+#navbar_ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Navbar li elem. props. */
+#navbar_ul li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+/* Navbar a elem. props. */
+#navbar_ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+/* Navbar a elem. hover props. */
+#navbar_ul li a:hover,
+#navbar_ul li a.active {
+    color: #088178;
+}
+/* Navbar a elem. hover underline props. */
+#navbar_ul li a.active::after,
+#navbar_ul li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+/* Navbar mobile menu props. */
+#navbar_mobile {
+    display: none;
+    align-items: center;
+}
+/* Navbar mobile menu close btn props. */
+#mobile_menu_close_btn {
+    display: none;
+}
+/* Hero section props. */
+#hero__section {
+    background-image: url("../images/hero4.png");
+    height: 90vh;
+    width: 100%;
+    background-position: top 25% right 0;
+    background-size: cover;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+/* Hero section h4 props. */
+#hero__section h4 {
+    padding-bottom: 15px;
+}
+/* Hero section h1 props. */
+#hero__section h1 {
+    color: #088178;
+}
+/* Hero section button props. */
+#hero__section button {
+    background-image: url("../images/button.png");
+    background-color: transparent;
+    color: #088178;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+}
+/* Feature section props. */
+#features__section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/* Features box props. */
+#features__section .feature_box {
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+/* Feature box hover props. */
+#features__section .feature_box:hover {
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+/* Feature box img props. */
+#features__section .feature_box img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+/* Feature box h6 props. */
+#features__section .feature_box h6 {
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    background-color: #fddde4;
+}
+/* Feature box h6(2) props. */
+#features__section .feature_box:nth-child(2) h6 {
+    background-color: #cdebbc;
+}
+/* Feature box h6(3) props. */
+#features__section .feature_box:nth-child(3) h6 {
+    background-color: #d1e8f2;
+}
+/* Feature box h6(4) props. */
+#features__section .feature_box:nth-child(4) h6 {
+    background-color: #cdd4f8;
+}
+/* Feature box h6(5) props. */
+#features__section .feature_box:nth-child(5) h6 {
+    background-color: #f6dbf6;
+}
+/* Feature box h6(6) props. */
+#features__section .feature_box:nth-child(6) h6 {
+    background-color: #fff2e5;
+}
+/* Featured products section props. */
+#featured-products__section {
+    text-align: center;
+}
+/* Feautured products container props. */
+#featured-products__section .product__container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+/* Featured products product box props. */
+#featured-products__section .product_box {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+/* Featured products product box hover props. */
+#featured-products__section .product_box:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+/* Featured products product img props. */
+#featured-products__section .product_box img {
+    width: 100%;
+    border-radius: 20px;
+}
+/* Featured products product description props. */
+#featured-products__section .product_box .product_description {
+    text-align: start;
+    padding: 10px 0;
+}
+/* Featured products product description span props. */
+#featured-products__section .product_box .product_description span {
+    color: #606063;
+    font-size: 12px;
+}
+/* Featured products product description h5 props. */
+#featured-products__section .product_box .product_description h5 {
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+/* Featured products product description i (stars) props. */
+#featured-products__section .product_box .product_description i {
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+}
+/* Featured products product description h4 props. */
+#featured-products__section .product_box .product_description h4 {
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+}
+/* Featured products product cart props. */
+#featured-products__section .product_box .fa-cart-plus {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-size: 21px;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+/* Banner section props. */
+#banner__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../images/banner/b2.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+/* Banner section h4 props. */
+#banner__section h4 {
+    color: #fff;
+    font-size: 16px;
+}
+/* Banner section h2 props. */
+#banner__section h2 {
+    color: #fff;
+    font-size: 30px;
+    padding: 10px 0;
+}
+/* Banner section span props. */
+#banner__section h2 span {
+    color: #ef3636;
+}
+/* Banner section button hover props. */
+#banner__section button:hover {
+    background-color: #088178;
+    color: #fff;
+}
+/* Action banner section props. */
+#action-banner__section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/* Action banner box props. */
+#action-banner__section .banner_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("../images/banner/b17.jpg");
+    min-width: 850px;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+/* Action banner 2 box props. */
+#action-banner__section .banner_box_2 {
+    background-image: url("../images/banner/b10.jpg");
+}
+/* Action banner box hover props. */
+#action-banner__section .banner_box:hover button {
+    background-color: #088178;
+    border: 1px solid #088178;
+}
+/* Action banner h4 props. */
+#action-banner__section h4 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+}
+/* Action banner h2 props. */
+#action-banner__section h2 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 800;
+}
+/* Action banner span props. */
+#action-banner__section span {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+/* Aditional banner section */
+#additional-banner__section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+}
+/* Additional banner box props. */
+#additional-banner__section .banner_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("../images/banner/b7.jpg");
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+/* Additional banner box 2 props. */
+#additional-banner__section .banner_box_2 {
+    background-image: url("../images/banner/b4.jpg");
+}
+/* Additional banner box 3 props. */
+#additional-banner__section .banner_box_3 {
+    background-image: url("../images/banner/b18.jpg");
+}
+/* Additional banner h2 props. */
+#additional-banner__section h2 {
+    color: #fff;
+    font-weight: 900;
+    font-size: 22px;
+}
+/* Additional banner h3 props. */
+#additional-banner__section h3 {
+    color: #ec544e;
+    font-weight: 800;
+    font-size: 15px;
+}
+/* Newsletter section props. */
+#newsletter__section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("../images/banner/b14.png");
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #041e42;
+}
+/* Newsletter h4 props. */
+#newsletter__section h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+}
+/* Newsletter p props. */
+#newsletter__section p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #818ea0;
+}
+/* Newsletter span props. */
+#newsletter__section p span {
+    color: #ffbd27;
+}
+/* Newsletter form props. */
+#newsletter__section .newsletter_form {
+    display: flex;
+    width: 40%;
+}
+/* Newsletter input props. */
+#newsletter__section input {
+    height: 3.125rem;
+    padding: 0 1.2em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+/* Newsletter button props. */
+#newsletter__section button {
+    background-color: #088178;
+    color: #fff;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+/* Footer props. */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/* Footer props. */
+footer .footer_col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+/* Footer logo props. */
+footer .footer_logo {
+    margin-bottom: 30px;
+}
+/* Footer h4 props. */
+footer h4 {
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+/* Footer p props. */
+footer p {
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+/* Footer a props. */
+footer a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+/* Footer a hover props. */
+footer a:hover {
+    color: #088178;
+}
+/* Footer follow box props. */
+footer .footer_follow {
+    margin-top: 20px;
+}
+/* Footer follow i props. */
+footer .footer_follow i {
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+    font-size: 20px;
+}
+/* Footer follow i hover props */
+footer .footer_follow i:hover {
+    color: #088178;
+}
+/* Footer apps row img props. */
+footer .footer_apps .footer_row img {
+    border: 1px solid #088178;
+    border-radius: 6px;
+}
+/* Footer apps img props. */
+footer .footer_apps img {
+    margin: 10px 0 15px 0;
+}
+/* Footer copyright props. */
+footer .footer_copyright {
+    width: 100%;
+    text-align: center;
+}
+/* Shop hero section props. */
+#shop_hero__section {
+    background-image: url("../images/banner/b1.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+/* Shop hero h2,p props. */
+#shop_hero__section h2,
+#shop_hero__section p {
+    color: #fff;
+}
+/* Shop pagination section props. */
+#pagination__section {
+    text-align: center;
+}
+/* Shop pagination text props. */
+#pagination__section a {
+    text-decoration: none;
+    background-color: #088178;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+}
+/* Shop pagination i props. */
+#pagination__section a i {
+    font-size: 16px;
+    font-weight: 600;   
+}
+/* Product details secton props. */
+#prodcut-details__section {
+    display: flex;
+    margin-top: 20px;
+}
+/* Product details img props. */
+#prodcut-details__section .product_img {
+    width: 40%;
+    margin-right: 50px;
+}
+/* Img group props. */
+.img_group {
+    display: flex;
+    justify-content: space-between;
+}
+/* Img column props. */
+.img_column {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+/* Product details props. */
+#prodcut-details__section .product_details {
+    width: 50%;
+    padding-top: 30px;
+}
+/* Product details h4 props. */
+#prodcut-details__section .product_details h4 {
+    padding: 40px 0 20px 0;
+}
+/* Product details h2 props. */
+#prodcut-details__section .product_details h2 {
+    padding: 40px 0 20px 0;
+    font-size: 26px;
+}
+/* Product details select props. */
+#prodcut-details__section .product_details select {
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+/* Product details input props. */
+#prodcut-details__section .product_details input {
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+/* Product details input focus props. */
+#prodcut-details__section .product_details input:focus {
+    outline: none;
+}
+/* Product details button props. */
+#prodcut-details__section .product_details button {
+    background-color: #088178;
+    color: #fff;
+}
+/* Product details span props. */
+#prodcut-details__section .product_details span {
+    line-height: 25px;
+}
+/* Blog section props. */
+#blog__section {
+    padding: 150px 150px 0 150px;
+}
+/* Blog page header props. */
+#shop_hero__section.blog_header {
+    background-image: url("../images/banner/b19.jpg");
+}
+/* Blog box props. */
+#blog__section .blog_box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding-bottom: 90px;
+}
+/* Blog box img props. */
+#blog__section .blog_img {
+    width: 50%;
+    margin-right: 40px;
+}
+/* Blog img props. */
+#blog__section img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+/* Blog box description props. */
+#blog__section .blog_description {
+    width: 50%;
+}
+/* Blog box description a props. */
+#blog__section .blog_description a {
+    text-decoration: none;
+    font-size: 11px;
+    color: #000;
+    font-weight: 700;
+    position: relative;
+    transition: 0.3s;
+}
+/* Blog box description line props. */
+#blog__section .blog_description a::after {
+    content: "";
+    width: 50px;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    top: 4px;
+    right: -60px;
+}
+/* Blog box description line props. */
+#blog__section .blog_description a:hover::after {
+    background-color: #088178;
+}
+/* Blog box description a hover props. */
+#blog__section .blog_description a:hover {
+    color: #088178;
+}
+/* Blog box description h1 props. */
+#blog__section .blog_box h1 {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    font-size: 70px;
+    font-weight: 700;
+    color: #c9cbce;
+    z-index: -9;
+}
+/* About header bck img props. */
+#shop_hero__section.about_header {
+    background-image: url("../images/about/banner.png");
+}
+/* About header section */
+#about__section {
+    display: flex;
+    align-items: center;
+}
+/* About img props. */
+#about__section img {
+    width: 624px;
+    height: auto;
+}
+/* About div props. */
+#about__section div {
+    padding-left: 40px;
+}
+/* About video section props. */
+#about-app__section {
+    text-align: center;
+}
+/* About video div section props. */
+#about-app__section .video_app {
+    width: 70%;
+    height: 100%;
+    margin: 30px auto 0 auto;
+}
+/* About video tag section props. */
+#about-app__section .video_app video{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+/* Contact details section props. */
+#contact-details__section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Contact details div props. */
+#contact-details__section .details_box {
+    width: 40%;
+}
+/* Contact details span props. */
+#contact-details__section .details_box span {
+    font-size: 16px;
+}
+/* Contact details h2 props. */
+#contact-details__section .details_box h2 {
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0;
+}
+/* Contact details h3 props. */
+#contact-details__section .details_box h3 {
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+/* Contact details li props. */
+#contact-details__section .details_box li {
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+}
+/* Contact details icons props. */
+#contact-details__section .details_box li i {
+    font-size: 14px;
+    padding-right: 22px;
+}
+/* Contact details icons p props. */
+#contact-details__section .details_box li p {
+    margin: 0;
+    font-size: 14px;
+}
+/* Contact details map div props. */
+#contact-details__section .map_box {
+    width: 55%;
+    height: 400px;
+}
+/* Contact details map props. */
+#contact-details__section .map_box iframe {
+    width: 100%;
+    height: 100%;
+}
+/* Contact form props. */
+#contact__section {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 80px;
+    border: 1px solid #e1e1e1;
+}
+/* Contact form props. */
+#contact__section form {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+/* Contact form span props. */
+#contact__section form span {
+    font-size: 18px;
+}
+/* Contact form h2 props. */
+#contact__section form h2 {
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0;
+}
+/* Contact form input / textarea props. */
+#contact__section form input,
+#contact__section form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #e1e1e1;
+}
+/* Contact form button props. */
+#contact__section form button {
+    background-color: #088178;
+    color: #fff;
+}
+/* Our people div props. */
+#contact__section .our_people div {
+    padding-bottom: 25px;
+    display: flex;
+    align-items: flex-start;
+}
+/* Our people img props. */
+#contact__section .our_people div img {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+/* Our people p props. */
+#contact__section .our_people div p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 25px;
+}
+/* Our people span props. */
+#contact__section .our_people div p span {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+/* Cart section props. */
+#cart__section {
+    overflow-x: auto;
+}
+/* Cart table props. */
+#cart__section table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+/* Cart img props. */
+#cart__section img {
+    width: 70px;
+}
+/* head table Remove props. */
+#cart__section table td:nth-child(1) {
+    width: 100px;
+    text-align: center;
+}
+/* head table iamge props. */
+#cart__section table td:nth-child(2) {
+    width: 150px;
+    text-align: center;
+}
+/* head table Product props. */
+#cart__section table td:nth-child(3) {
+    width: 250px;
+    text-align: center;
+}
+/* head table Price, Quantity, Subtotal props. */
+#cart__section table td:nth-child(4),
+#cart__section table td:nth-child(5),
+#cart__section table td:nth-child(6) {
+    width: 150px;
+    text-align: center;
+}
+/* head table Quantity props. */
+#cart__section table td:nth-child(5) input{
+    width: 70px;
+    padding: 10px 5px 10px 20px;
+}
+/* table head props. */
+#cart__section table thead {
+    border: 1px solid #e2e9e1;
+    border-left: none;
+    border-right: none;
+}
+/* table head td props. */
+#cart__section table thead td {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+}
+/* table body row td props. */
+#cart__section table tbody tr td {
+    padding-top: 15px;
+}
+/* table body row td props. */
+#cart__section table tbody tr td a i {
+    color: #000;
+}
+/* Coupon section props. */
+#coupon__section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/* Coupon box props. */
+#coupon_box {
+    width: 50%;
+    margin-bottom: 30px;
+}
+/* Coupon box h3 props. */
+#coupon_box h3 {
+    padding-bottom: 15px;
+}
+/* Coupon box input props. */
+#coupon_box input {
+    padding: 10px 20px;
+    outline: none;
+    width: 60%;
+    margin-right: 10px;
+    border: 1px solid #e2e9e1;
+}
+/* Coupon box button props. */
+#coupon_box button {
+    background-color: #088178;
+    color: #fff;
+    padding: 12px 20px;
+}
+/* Subtotal box props. */
+#subtotal_box {
+    width: 50%;
+    margin-bottom: 30px;
+    border: 1px solid #e2e9e1;
+    padding: 30px;
+}
+/* Subtotal box table props. */
+#subtotal_box table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+/* Subtotal box table td props. */
+#subtotal_box table td {
+    width: 50%;
+    border: 1px solid #e2e9e1;
+    font-size: 13px;
+    padding: 10px;
+}
+/* Subtotal box h3 props. */
+#subtotal_box h3 {
+    padding-bottom: 15px;
+}
+/* Subtotal box button props. */
+#subtotal_box button {
+    background-color: #088178;
+    color: #fff;
+    padding: 12px 20px;
+}
+/* Media Query props. for width 799 */
+@media (max-width:799px) {
+    /* Section p1 props. */
+    .section-p1 {
+        padding: 40px 40px;
+    }
+    /* Navbar ul props. */
+    #navbar_ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #E3E6F3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+    /* Navbar ul active props. */
+    #navbar_ul.active {
+        right: 0;
+    }
+    /* Navbar ul li props. for width 799 */
+    #navbar_ul li {
+        margin-bottom: 25px;
+    }
+    /* Navbar mobile menu button props. */
+    #navbar_mobile {
+        display: flex;
+        align-items: center;
+    }
+    /* Navbar mobile i props. */
+    #navbar_mobile i {
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+    /* Mobile menu close btn props. */
+    #mobile_menu_close_btn {
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+    /* Navbar ul cart props. */
+    #navbar_ul_cart {
+        display: none;
+    }
+    /* Hero section props. */
+    #hero__section {
+        height: 90vh;
+        padding: 0 80px;
+        background-position: top 30% right 30%;
+    }
+    /* Features section props. */
+    #features__section {
+        justify-content: center;
+    }
+    /* Features box props. */
+    #features__section .feature_box {
+        margin: 15px 15px;
+    }
+    /* Featured products container props. */
+    #featured-products__section .product__container {
+        justify-content: center;
+    }
+    /* Featured products product box props. */
+    #featured-products__section .product_box {
+        margin: 15px;
+    }
+    /* Banner section props. */
+    #banner__section {
+        height: 20vh;
+    }
+    /* Action banner banner box props. */
+    #action-banner__section .banner_box {
+        min-width: 100%;
+        height: 30vh;
+    }
+    /* Additional banner section props. */
+    #additional-banner__section {
+        padding: 0 40px;
+    }
+    /* Additional banner banner box props. */
+    #additional-banner__section .banner_box {
+        width: 28%;
+    }
+    /* Newsletter form props. */
+    #newsletter__section .newsletter_form {
+        width: 70%;
+    }
+    /* About header section props. */
+    #about__section {
+        flex-direction: column;
+    }
+    /* About section img props. */
+    #about__section img {
+        width: 100%;
+    }
+    /* Contact section props. */
+    #contact__section {
+        padding: 40px;
+    }
+    /* Contact form props. */
+    #contact__section form {
+        width: 50%;
+    }
+}
+/* Media Query props. for  */
+@media (max-width: 477px) {
+    /* section-p1 props. */
+    .section-p1 {
+        padding: 20px;
+    }
+    /* h1 props. */
+    h1 {
+        font-size: 38px;
+    }
+    /* h2 props. */
+    h2 {
+        font-size: 32px;
+    }
+    /* Navbar section props. */
+    #navbar__section {
+        padding: 10px 30px;
+    }
+    /* Hero section props. */
+    #hero__section {
+        padding: 0 20px;
+        background-position: 65%;
+    }
+    /* Feature section props. */
+    #features__section  {
+        justify-content: space-between;
+    }
+    /* Feature box props. */
+    #features__section .feature_box {
+        width: 155px;
+        margin: 0 0 15px 0;
+    }
+    /* Featured box props. */
+    #featured-products__section .product_box {
+        width: 100%;
+    }
+    /* Banner section props. */
+    #banner__section {
+        height: 40vh;
+    }
+    /* Banner box props. */
+    #action-banner__section .banner_box {
+        height: 40vh;
+    }
+    /*  */
+    #action-banner__section .banner_box_2 {
+        margin-top: 20px;
+    }
+    /* Additional banner section props. */
+    #additional-banner__section {
+        padding: 0 20px;
+    }
+    /* Additional banner box props. */
+    #additional-banner__section .banner_box {
+        width: 100%;
+    }
+    /* Newsletter section props. */
+    #newsletter__section {
+        padding: 40px 20px;
+    }
+    /* Newsletter form props. */
+    #newsletter__section .newsletter_form {
+        width: 1000%;
+    }
+    /* Footer copyright props.  */
+    footer .footer_copyright {
+        text-align: start;
+    }
+    /* Product details secton props. */
+    #prodcut-details__section {
+        display: flex;
+        flex-direction: column;
+    }
+    /* Product details img props. */
+    #prodcut-details__section .product_img {
+        width: 100%;
+        margin-right: 0px;
+    }
+    /* Product details props. */
+    #prodcut-details__section .product_details {
+        width: 100%;
+    }
+    /* Blog section props. */
+    #blog__section {
+        padding: 100px 20px 0 20px;
+    }
+    /* Blog box props. */
+    #blog__section .blog_box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* Blog img props. */
+    #blog__section .blog_img {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    /* Blog description props. */
+    #blog__section .blog_description {
+        width: 100%;
+    }
+    /* About header section props. */
+    #about__section {
+        flex-direction: column;
+    }
+    /* About section img props. */
+    #about__section img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    /* About div props. */
+    #about__section div {
+        padding-left: 0;
+    }
+    /* About video div props. */
+    #about-app__section .video_app {
+        width: 100%;
+    }
+    /* Contact details section props. */
+    #contact-details__section {
+        flex-direction: column;
+    }
+    /* Details box props. */
+    #contact-details__section .details_box {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    /* Map box div props. */
+    #contact-details__section .map_box {
+        width: 100%;
+    }
+    /* Contact section props. */
+    #contact__section {
+        margin: 10px;
+        padding: 30px 10px;
+        flex-wrap: wrap;
+    }
+    /* Contact form props. */
+    #contact__section form {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    /* Coupon section props. */
+    #coupon__section {
+        display: flex;
+        flex-direction: column;
+    }
+    /* Coupon box props. */
+    #coupon_box {
+        width: 100%;
+    }
+    /* Subtotal box props. */
+    #subtotal_box {
+        width: 100%;
+        padding: 20px;
+    }
+}
